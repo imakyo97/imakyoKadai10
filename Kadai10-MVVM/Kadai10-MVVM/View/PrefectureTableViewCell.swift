@@ -15,8 +15,8 @@ class PrefectureTableViewCell: UITableViewCell {
     @IBOutlet private weak var titleLabel: UILabel!
     @IBOutlet private weak var detailLabel: UILabel!
 
-    func configure(title: String, detail: String) {
+    func configure(title: String, index: Int) {
         titleLabel.text = title
-        detailLabel.text = detail
+        detailLabel.text = "\(index)番目の都道府県です"
     }
 }

@@ -32,8 +32,8 @@ class ViewController: UIViewController {
                     for: indexPath
                 ) as! PrefectureTableViewCell
                 let title = item.title
-                let detail = "\(indexPath.row + 1)番目の都道府県です。"
-                cell.configure(title: title, detail: detail)
+                let index = indexPath.row + 1
+                cell.configure(title: title, index: index)
                 cell.backgroundColor = cellColor[indexPath.row % 3]
                 return cell
             }
